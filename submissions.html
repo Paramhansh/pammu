@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submissions</title>
+</head>
+<body>
+    <h1>Contact Form Submissions</h1>
+    <ul>
+        {% for submission in submissions %}
+        <li>
+            <strong>Name:</strong> {{ submission[1] }}<br>
+            <strong>Email:</strong> {{ submission[2] }}<br>
+            <strong>Message:</strong> {{ submission[3] }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
